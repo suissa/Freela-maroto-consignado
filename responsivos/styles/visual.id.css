@@ -1,0 +1,458 @@
+:root {
+  --blue-main: #0053AD;
+  --blue-dark: #465B72;
+  --green-main: #00bf69;
+  --card-simulacao-bg: #335262;
+  --card-contratacao-bg: #edbd44;
+  --card-contratacao-txt: #9e7a17;
+  --card-ofertas-bg: #26a6d1;
+  --card-ofertas-txt: #104e64;
+}
+
+.card-beneficios {
+  width: 100%;
+  min-height: 70px;
+  border-radius: 12px;
+  display: inline-block;
+}
+.card-simulacao {
+  background-color: var(--card-simulacao-bg);
+}
+.card-contratacao {
+  background-color: var(--card-contratacao-bg);
+  color: var(--card-contratacao-txt);
+}
+.card-ofertas {
+  background-color: var(--card-ofertas-bg);
+  color: var(--card-ofertas-txt);
+}
+
+
+@media (min-width: 1500px) {
+  .card-large {
+    width: 253px;
+    height: 175px;
+  }
+}
+@media (min-width: 1000px)
+{
+  .card-lg {
+    width: 140px !important;
+    height: 96px !important;
+  }
+  .icon-beneficios {
+    width: 1rem !important;
+  }
+}
+
+@media (min-width: 1280px)
+{
+  .card-lg {
+    width: 170px !important;
+    height: 120px !important;
+  }
+  .icon-beneficios {
+    width: 1rem !important;
+  }
+}
+
+
+@media (min-width: 1500px)
+{
+  .card-lg {
+    width: 206px !important;
+    height: 149px !important;
+  }
+  .icon-beneficios {
+    width: 2rem !important;
+    margin-top: 16px !important;
+  }
+  .icon-ofertas {
+    top: 2rem !important;
+  }
+}
+
+body ul li .icon-report {
+  position: relative;
+  top: 2px;
+}
+
+
+@media (min-width: 1020px)
+{
+  
+  body table td[data-label="Valor da parcela"] {
+    padding-left: 20px;
+  }
+
+  body table td[data-label="Valor liberado"] {
+    padding-left: 20px;
+  }
+}
+
+.icon-beneficios {
+  width: 3rem;
+  margin: 0 auto;
+  position: relative;
+  top: 2rem;
+}
+
+body .icon-contratacao {
+  top: 1.2rem;
+}
+body .icon-ofertas {
+  top: 2.8rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--blue-main);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--blue-main);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--blue-main);
+}
+
+input.appearance-none::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #465B72;
+  opacity: 1; /* Firefox */
+}
+
+#consignado-cel {
+  max-width: inherit;
+}
+
+body {
+  caret-color: var(--blue-main);
+}
+
+body div .text-blue-ID {
+  color: var(--blue-main);
+}
+
+body div .bg-blue-ID {
+  background-color: var(--blue-main);
+}
+
+body div .hover-bg-blue-ID:hover {
+  background-color: var(--blue-main);
+}
+
+#bg-full {
+  background-image: url('./../images/bg-01.jpg');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: contain;
+}
+
+@media (max-width: 800px)
+{
+  .lh-3 {
+    line-height: 3rem;
+  }
+}
+
+.bg-footer {
+  background-color: #e9e9f0;
+}
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 1rem;
+}
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  font-size: 0.6rem;
+  top: 14px;
+  right: 12px;
+  position: absolute;
+  color: #0053ad;
+}
+
+.select-wrapper-form::after {
+  content: "▼";
+  font-size: 0.6rem;
+  top: 14px;
+  right: 12px;
+  position: absolute;
+}
+
+
+#container-site {
+  height: 530px;
+  /* border-bottom: 1px solid #ccc; */
+}
+
+#icon-chat {
+  /* position: absolute;
+  top: 400px;
+  right: 20px; */
+  filter: drop-shadow(0px 4px 14px #666);
+  padding-right: 30px;
+}
+
+#icon-chat img {
+  width: 40px;
+}
+
+.btn-backspace {
+  background-color: #aecae8;
+}
+.btn-keypad {
+  background-color: #5c7692;
+}
+.btn-green {
+  background-color: var(--green-main);
+}
+
+.gradient-modal {
+  background: rgba(0, 0, 0, 0.7);
+}
+.gradient-id {
+  background: rgb(79,236,67);
+  background: linear-gradient(270deg, rgba(50, 228, 38, 0.9) 0%, rgba(1, 73, 133, 0.9) 100%);
+}
+.loader {
+	border-top-color: #3498db;
+	-webkit-animation: spinner 1.5s linear infinite;
+	animation: spinner 1.5s linear infinite;
+  
+}
+
+@-webkit-keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+
+/* Fonts */
+
+body  .text-blue-dark {
+  color: var(--blue-dark);
+}
+.text-xxs {
+  font-size: 0.7rem;
+}
+.text-xxxs {
+  font-size: 0.6rem;
+}
+.text-xxxxs {
+  font-size: 0.5rem;
+}
+
+
+/* Making the label break the flow */
+.floating-label
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  z-index: 1500;
+}
+
+/* Hide the browser-specific focus styles */
+.floating-label-field
+{
+    color: rgba(44, 62, 80, .75); 
+    border-width: 0;
+    z-index: 2000;
+}
+.floating-label-field:focus
+{
+    outline: 0;
+    box-shadow: 0;
+}
+.floating-label-field::placeholder
+{
+    color: red;
+}
+
+/* Make the label and field look identical on every browser */
+.floating-label,
+.floating-label-field
+{
+    font: inherit;
+    line-height: 1; 
+
+    display: block;
+
+    width: 100%;
+}
+
+.floating-label-field,
+.floating-label-wrap
+{
+    position: relative;
+}
+
+/* Input Style #1 */
+.floating-label-field--s1
+{
+    transition: border-color .25s ease-in-out;
+
+    color: #666; 
+    border-bottom: 1px solid #666;
+    background-color: transparent;
+}
+.floating-label-field--s1 + .floating-label
+{
+    transition: transform .25s, opacity .25s ease-in-out;
+    transform-origin: 0 0;
+
+    opacity: .5;
+}
+.floating-label-field--s1:focus,
+.floating-label-field--s1:not(:placeholder-shown)
+{
+    border-color: #666;
+}
+.floating-label-field--s1:focus + .floating-label,
+.floating-label-field--s1:not(:placeholder-shown) + .floating-label
+{
+    transform: translate(.25em, -30%) scale(.8);
+
+    opacity: .25;
+}
+.floating-label-field--s1:valid:not(:placeholder-shown)
+{
+    /* border-color: rgba(46, 213, 115, .3); */
+}
+.floating-label-field--s1:invalid
+{
+    border-color: rgba(255, 71, 87, .3);
+}
+
+/* Input Style #2 */
+.floating-label-field--s2
+{
+    transition: background-color .25s ease-in-out; 
+
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.floating-label-field--s2 + .floating-label
+{
+    visibility: hidden;
+
+    transition: transform .25s, visibility .5s, opacity .5s ease-in-out; 
+
+    opacity: 0;
+}
+.floating-label-field--s2:focus + .floating-label,
+.floating-label-field--s2:not(:placeholder-shown) + .floating-label
+{
+    visibility: visible;
+
+    transform: translateY(-80%); 
+
+    opacity: .5;
+}
+.floating-label-field--s2:valid:not(:placeholder-shown)
+{
+    border-color: #adefc8; 
+    background-color: #adefc8;
+}
+.floating-label-field--s2:invalid
+{
+    border-color: #ffe0e3; 
+    background-color: #ffe0e3;
+}
+
+.floating-label-field--s3
+{
+    padding: 1.5em; 
+
+    transition: border-color .25s ease-in-out;
+
+    color: rgba(255, 255, 255, .75);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 5px;
+    background-color: transparent;
+}
+.floating-label-field--s3 + .floating-label
+{
+    position: absolute;
+    top: .75em;
+    left: .75em;
+
+    display: inline-block;
+
+    width: auto;
+    margin: 0;
+    padding: .75em;
+
+    transition: transform .25s, opacity .25s, padding .25s ease-in-out;
+    transform-origin: 0 0;
+
+    color: rgba(255, 255, 255, .5);
+}
+.floating-label-field--s3:focus,
+.floating-label-field--s3:not(:placeholder-shown)
+{
+    border-color: rgba(255, 255, 255, .1);
+}
+.floating-label-field--s3:focus + .floating-label,
+.floating-label-field--s3:not(:placeholder-shown) + .floating-label
+{
+    z-index: 2500;
+
+    padding: .75em;
+
+    transform: translate(0, -2em) scale(.9);
+
+    color: rgba(255, 255, 255, .25); 
+    background-color: #2c3e50;
+}
+
+/* Common Styles */
+/* Identical inputs on all browsers */
+.floating-label-field--s1:not(textarea),
+.floating-label-field--s2:not(textarea),
+.floating-label-field--s3:not(textarea)
+{
+    max-height: 4em;
+}
+
+.floating-label-field--s1,
+.floating-label-field--s1 + .floating-label,
+.floating-label-field--s2,
+.floating-label-field--s2 + .floating-label
+{
+    padding: 1rem 1.5em 0.5rem 0.5rem;
+}
+
+.floating-label-field--s1 + .floating-label,
+.floating-label-field--s2 + .floating-label
+{
+    z-index: 1500;
+}
+
+.floating-label-field--s1::placeholder,
+.floating-label-field--s3::placeholder
+{
+    color: transparent;
+}
+
+
+
+.z-9999 {
+  z-index: 9999;
+}
+
+.w-46 {
+  width: 46%;
+}

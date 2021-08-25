@@ -1,0 +1,148 @@
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  /* font-size: 0.875rem; */
+  line-height: 1.5;
+}
+.table.main-first-cell .tr .td {
+  flex-grow: 0;
+  flex: none;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+}
+.table.main-first-cell .tr .td:first-child {
+  flex-grow: 1;
+  flex-direction: row;
+  display: flex;
+  justify-content: start;
+}
+/* .table.striped .tbody .tr:nth-of-type(even) .td {
+  background-color: #fff;
+} */
+.table.hovered .tbody .tr:hover .td {
+  background-color: #f1f5f8;
+}
+/* .table .thead {
+  font-weight: 700;
+} */
+/* .table .thead .tr .td {
+  color: #f1f5f8;
+  background-color: #3d4852;
+  text-transform: uppercase;
+} */
+.table .tbody .tr .td {
+  background-color: #f8fafc;
+}
+.table .tr {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+.table .tr .td {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  word-break: break-word;
+  /* padding: 1rem; */
+  margin: 0.25rem;
+}
+
+.table-tr td {
+  padding: 2px;
+  margin-left: 4px;
+}
+
+.zebra tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+
+/* table responsible */
+
+  .table-responsible {
+
+  }
+  .table-responsible {
+    /* border: 1px solid #ccc; */
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .table-responsible caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75rem;
+  }
+
+  .table-responsible tr {
+    /* background-color: #f8f8f8; */
+    /* border: 1px solid #ddd;
+    padding: .35rem; */
+  }
+
+  .table-responsible td {
+    padding: .625rem 0;
+    text-align: left;
+  }
+
+  .table-responsible th {
+    /* font-size: .85rem;
+    letter-spacing: .1rem; */
+    /* text-transform: uppercase; */
+  }
+
+  @media screen and (max-width: 600px) {
+    .table-responsible {
+      border: 0;
+    }
+
+    .table-responsible caption {
+      font-size: 1.3rem;
+    }
+
+    .table-responsible thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    .table-responsible tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625rem;
+      padding-left: 4px;
+    }
+
+    .table-responsible td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8rem;
+      text-align: right;
+      padding-right: 10px;
+    }
+
+    .table-responsible td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a .table-responsible
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .table-responsible td:last-child {
+      border-bottom: 0;
+    }
+  }

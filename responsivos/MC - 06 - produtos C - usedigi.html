@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela 01</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css" integrity="sha512-ifsLB5FigXH07aADF1bmVX8B66KrNLZGT6RY9HPN3hTn9eaP+t16azYMAuULHZJyR8zC4O5Vt/76YZG6jNktIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css"
+  />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/visual.id.css" />
+  <link rel="stylesheet" href="./styles/dashboard.css" />
+  <link rel="stylesheet" href="./styles/tables.css" />
+
+</head>
+<body>
+  <header class="header-dashboard h-40 ">
+
+    <div class="w-11/12 h-40 mx-auto flex justify-between items-center text-center text-white">
+      <div class="w-5/12 mt-10">
+
+        <img src="./images/logo-white.png" class="lg:w-9/12 2xl:w-8/12" alt="">
+
+        <h2 class="text-left text-xl mt-10 font-bold">
+          Olá, Juliana Coelho!
+        </h2>
+      </div>
+
+      <!-- <div class="w-full bg-gray-500 w-11/12 grid grid-flow-row auto-rows-max flex justify-end items-center text-center space-x-6"> -->
+      <div class="w-7/12 mr-2 lg:mt-4">
+        <div id="container-top-right" class="w-full h-20 flex flex-wrap justify-end">
+
+          <img src="./images/icon-home-large.png" id="icon-home" class="" alt="">
+          <img src="./images/icon-ring-notification.png" id="icon-ring" class="" alt="">
+
+          <!-- MENU AVATAR -->
+          <div class="static">
+            <img src="./images/avatar-teste.jpg" alt="" id="icon-avatar-top">
+            <div class="avatar-vert bg-white shadow-md h-80 absolute z-10 hidden">
+
+              <div class="avatar-img">
+                <img src="./images/avatar-teste.jpg" alt="" id="icon-avatar-top-menu">
+              </div>
+
+              <div>
+                <h5 class="text-blue-ID text-2xl font-bold">
+                  Juliana Coelho
+                </h5>
+                <h6 class="text-blue-dark font-semibold">
+                  CPF 123.456.789-00
+                </h6>
+              </div>
+
+              <div class="menu-vert-list">
+                <ul>
+                  <li class="w-full">
+                    <a href="#" class="w-full">
+                      <img src="./images/icon-meus-dados.png" alt="">
+                      <span class="text-blue-dark">Meus dados</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./images/icon-ajuda.png" alt="">
+                      <span class="text-blue-dark">Ajuda</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./images/icon-privacidade.png" alt="">
+                      <span class="text-blue-dark">Privacidade</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./images/icon-sair.png" alt="">
+                      <span class="text-blue-dark">Sair</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- MENU ICON RIGHT TOP -->
+          <div class="static">
+            <img src="./images/icon-mark.png" alt="" id="icon-mark">
+
+            <div class="menu-vert bg-white shadow-md rounded-full absolute z-10 -top-1 hidden">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-01.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-02.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-03.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-04.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-05.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-06.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div id="container-bottom-right"
+        class="w-full h-20 flex flex-wrap
+        sm:space-x-2
+        lg:ml-10
+        justify-end -mt-2">
+
+          <div class="w-11/12 sm:h-20 text-left
+                      sm:w-full
+                      md:w-10/12
+                      lg:w-5/12
+                      ">
+
+            <div class="select-wrapper">
+              <select id="select" class="
+                w-full h-10 text-xs sm:text-lg font-semibold text-blue-ID rounded pl-4
+                lg:text-sx
+                mb-2
+              ">
+                <option>Selecione a matrícula</option>
+                <option>No</option>
+                <option>Maybe</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="w-8/12 mt-2
+            sm:-mt-6
+            lg:w-6/12 lg:mt-0 lg:float-left lg:space-x-2
+            ">
+            <div class="btn-trocar w-11/12 btn-top h-10 bg-blue-500 rounded leading-7
+                        sm:w-full
+                        md:w-5/12
+                        lg:w-5/12  lg:float-left
+                        float-right sm:float-none
+                        mb-2
+                        ">
+              <button class="">
+                <img src="./images/btn-trocar.png" class="mt-1" alt="">
+              </button>
+            </div>
+            <div class="btn-token  w-11/12 sm:w-6/12 btn-top h-10 bg-green-500 rounded leading-7
+                        sm:w-full
+                        md:w-5/12
+                        lg:w-5/12  lg:float-left
+                        float-right sm:float-none
+                        ">
+              <button class="">
+                <img src="./images/btn-token.png" class="mt-1" alt="">
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- barrinha -->
+    <div class="w-11/12 -mt-8 mx-auto flex items-stretch justify-start items-center text-center">
+      <div class="barrinha w-5/12 sm:w-3/12 lg:w-2/12 h-16 p-4 sm:p-2 bg-white shadow-md rounded-xl">
+        <div class="line-075 -mt-1  sm:pt-2">
+          <span class="text-blue-ID w-full font-bold text-xxxs block md:text-md">Margem disponível</span>
+
+          <span class="text-md sm:text-xl text-blue-dark font-semibold block mt-2 lg:mt-0">$ 403,57</span>
+        </div>
+      </div>
+
+      <div class="barrinha clear-both w-16 h-16 p-4 ml-1 sm:ml-3 bg-white shadow-md rounded-xl">
+
+        <img src="./images/icon-eye.png" class="mt-2" alt="">
+      </div>
+    </div>
+
+  </header>
+  <main class="h-screen flex-grow">
+
+    <div class="w-11/12 mx-auto mt-8 mb-2">
+      <div class="text-blue-dark text-xxs font-semibold">
+        Home / <span class="text-blue-ID">Ofertas</span>
+      </div>
+      <h3 class="text-blue-ID text-2xl mt-4">Ofertas</h3>
+    </div>
+    <!-- cards -->
+
+
+
+    <div class="mx-auto w-11/12 grid justify-between grid-cols-1 gap-10 lg:grid-cols-4  mt-10">
+      <div class="w-full mt-20">
+        <img src="./images/logo-use-digi.png" alt="" class="mx-auto block w-3/4">
+
+        <img src="./images/banner-use-digi-vertical.jpg" alt="" class="mt-28">
+      </div>
+      <div class="w-full mt-10 md:mt-0 lg:w-10/12 text-blue-dark mb-20 lg:col-span-3">
+        <h6 class="text-blue-ID text-3xl p-4">
+          SÓ PARA QUEM GOSTA DE ECONOMIZAR!
+        </h6>
+        <p class="text-2xl p-4">
+          Acaba de ser lançada a UseDigi, uma nova plataforma de conta digital. Com ela, você fica livre para cuidar do seu dinheiro sem depender de instituições bancárias ou taxas de manutenção.
+
+          <br>
+          <br>
+          <strong>Tudo com muito mais segurança e comodidade. </strong>
+        </p>
+
+        <div class="justify-start items-center mt-4">
+
+          <div class="w-full grid
+          grid-cols-1 lg:grid-cols-4 gap-4
+          ">
+
+            <div class="w-full lg:col-span-3 p-4">
+              <h6 class="text-blue-ID mb-4 text-2xl">
+                Ao criar uma UseDigi você consegue?
+              </h6>
+              <ul class="mb-10 text-xl">
+                <li>
+                  • Realizar e receber pagamentos;
+                </li>
+                <li>
+                  • Fazer transferências;
+                </li>
+                <li>
+                  • Utilizar o PIX;
+                </li>
+                <li>
+                  • Emitir Comprovantes;
+                </li>
+                <li>
+                  • Solicitar Extratos.
+                </li>
+              </ul>
+
+              <div class="inline-flex space-x-4 mb-20 h-40 w-full">
+                <a href="#" class="w-4/12 h-20 text-center link-ofertas text-blue-ID flex-1">
+                  <img src="./images/icon-baixe-app.png" alt="" class="w-20 xl:w-28 block mx-auto mb-8">
+                  <span class="">Baixe o app<br> nas lojas</span>
+                </a>
+
+                <a href="#" class="w-4/12 h-20 text-center link-ofertas text-blue-ID flex-1">
+                  <img src="./images/icon-faca-cadastro.png" alt="" class="w-20 xl:w-28 block mx-auto mb-8">
+                  <span class="">Abra sua UseDigi</span>
+                </a>
+
+                <a href="#" class="w-4/12 h-20 text-center link-ofertas text-blue-ID flex-1">
+                  <img src="./images/icon-resgate-valor.png" alt="" class="w-20 xl:w-28 block mx-auto mb-8">
+                  <span class="">Aproveite todas as
+                    vantagens da UseDigi</span>
+                </a>
+
+              </div>
+
+              <div class="w-full p-4 text-blue-ID bold mt-10">
+
+                Baixe agora o app da UseDigi e comece a aproveitar
+                <br>
+                  todas as vantagens de uma conta 100% online!
+              </div>
+
+              <div class="w-full p-4 text-blue-ID bold mt-10 flex justify-start inline-flex space-x-2">
+                <a href="#" class="">
+                  <img src="./images/btn-baixar-google.png" alt="" class="">
+                </a>
+                <a href="#" class="">
+                  <img src="./images/btn-baixar-apple.png" alt="" class="">
+                </a>
+
+              </div>
+            </div>
+
+            <div class="w-full p-4 lg:p-0 text-blue-ID bold mt-10 flex justify-start inline-flex space-x-2">
+
+
+                <img src="./images/use-digi-celular.png" id="consignado-cel"
+                      alt="" class="mt-20">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <br><br>
+
+  </main>
+
+  <footer class="bg-footer pr-4">
+    <div class="w-11/12 mx-auto text-right text-xxs pt-2 pb-2">
+
+      <div class="leading-3 flex justify-end space-x-2">
+
+        <span class="mt-1 font-bold text-blue-dark">
+          Queremos ouvir você
+        </span>
+
+        <a href="#">
+          <img src="./images/icon-social-insta.gif" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/icon-social-linkedin.gif" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/icon-social-fb.gif" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/icon-social-yt.gif" alt="">
+        </a>
+
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('icon-avatar-top')
+            .addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              document.querySelector('.avatar-vert').classList.toggle('hidden');
+            });
+
+
+    document.getElementById('icon-mark')
+            .addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              document.querySelector('.menu-vert').classList.toggle('hidden');
+            });
+    document.querySelector('div:not(.menu-vert)')
+            .addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              document.querySelector('.menu-vert').classList.add('hidden');
+            });
+  </script>
+
+</body>
+</html>

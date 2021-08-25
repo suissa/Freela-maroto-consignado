@@ -1,0 +1,149 @@
+:root {
+  --main-blue-color: #0053ad;
+}
+
+
+body div form .input-validated {
+  background-image: url('./../images/icon-check.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-position-x: 98%;
+  border-bottom: 1px solid #00ad00;
+  padding-left: 6px;
+}
+
+body div form .input-validated-meu-primeiro-acesso {
+  border-bottom: 1px solid #0053ad;
+  padding-left: 6px;
+}
+
+
+body div .label-validated {
+  color: #00ad00 !important;
+}
+
+body div .link-forgot-password {
+  font-size: 0.8rem;
+  color: var(--main-blue-color);
+  text-align: right;
+}
+
+
+
+/* specials */
+.floating-form {
+  /* width:320px; */
+}
+
+/****  floating-Lable style start ****/
+.floating-label { 
+  position:relative; 
+  margin-bottom:20px; 
+}
+.floating-input , .floating-select {
+  padding: 4px 4px;
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #0053ad;
+  padding-left: 6px;
+  font-size: 0.6rem;
+  color: #666;
+}
+
+@media screen and (min-width: 1000px) {
+  .floating-form label {
+    font-size: 0.9rem;
+  }
+}
+
+.floating-input:focus , .floating-select:focus {
+     outline:none;
+     border-bottom:2px solid #0053ad; 
+}
+
+label {
+  color:#666; 
+  font-size: 0.75rem;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:5px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+  top:-8px;
+  font-size: 0.75rem;
+  color:#0053ad;
+}
+
+.floating-select:focus ~ label , .floating-select:not([value=""]):valid ~ label {
+  top:-18px;
+  font-size:14px;
+  /* color:#0053ad; */
+  color: #00ad00;
+}
+
+/* active state */
+.floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after, .floating-select:focus ~ .bar:before, .floating-select:focus ~ .bar:after {
+  width:50%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.floating-textarea {
+   min-height: 30px;
+   max-height: 260px; 
+   overflow:hidden;
+  overflow-x: hidden; 
+}
+
+/* highlighter */
+.highlight {
+  position:absolute;
+  height:50%; 
+  width:100%; 
+  top:15%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.floating-input:focus ~ .highlight , .floating-select:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* animation */
+@-webkit-keyframes inputHighlighter {
+	from { background:#0053ad; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#0053ad; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#0053ad; }
+  to 	{ width:0; background:transparent; }
+}
+
+.keypad-pass {
+  background-color: #465b72;
+}
+
+.keypad-input {
+  background-color: #5c7692;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela 01</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css" integrity="sha512-ifsLB5FigXH07aADF1bmVX8B66KrNLZGT6RY9HPN3hTn9eaP+t16azYMAuULHZJyR8zC4O5Vt/76YZG6jNktIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css"
+  />
+
+  <link rel="stylesheet" href="./styles/visual.id.css" />
+  <link rel="stylesheet" href="./styles/forms.css" />
+
+  <style>
+    html{
+      margin-bottom: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="w-full mb-4">
+    <div class="w-full">
+      <img class="w-full" src="./images/bg-top-primeiro-acesso.jpg" alt="">
+
+    </div>
+
+    <div class="w-11/12 sm:w-3/4 lg:w-8/12 xl:w-7/12 mx-auto mt-4">
+      <h1 class="text-blue-ID font-bold text-xl lg:text-lg">
+        Cadastrar senha de acesso ao Portal, App Meu Consignado e Use Mais Store
+      </h1>
+      <p class="mt-2 text-gray-500 font-semibold text-sx">
+        Esta é a senha para acessar o Portal e App Meu Consignado, verificar suas operações, realizar simulações, entre muitas opções.
+      </p>
+
+      <form class="bg-white w-full mt-4 md:mt-8">
+
+
+        <div class="form-line w-full flex justify-start space-x-2 md:space-x-6">
+
+          <div class="floating-form w-2/4 pt-6">
+
+
+            <div class="floating-label">
+              <input class="floating-input" type="text" placeholder=" ">
+              <span class="highlight"></span>
+              <label>Digite nova senha</label>
+            </div>
+
+            <div class="floating-label">
+              <input class="floating-input text-gray-500" type="text" placeholder=" ">
+              <span class="highlight"></span>
+              <label>Confirme nova senha</label>
+            </div>
+          </div>
+
+          <div class="w-5/12 mt-4 p-2 h-auto bg-yellow-50 text-left font-semibold">
+            <ul class="text-xxxs md:text-xxxs text-red-400">
+              <li>
+                * A senha deve conter 6 dígitos.
+              </li>
+              <li>
+                * Não pode conter sequências (ex. 1234567).
+              </li>
+              <li>
+                * Não pode ter dígito inicial igual a 0 (ex. 0123456).
+              </li>
+              <li>
+                * Não pode ter dígito repetido (ex. 111111).
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+
+
+    <div class="w-11/12 sm:w-3/4 lg:w-8/12 xl:w-7/12 mx-auto mt-4">
+      <h1 class="text-blue-ID font-bold text-xl lg:text-lg">
+        Cadastrar senha da consignação
+      </h1>
+      <p class="mt-2 text-gray-500 font-semibold text-sx">
+        Esta senha é usada para efetivar operações consignadas junto às instituições financeiras ou pelo Portal e App.
+      </p>
+
+      <form class="bg-white w-full mt-8">
+
+
+        <div class="form-line w-full flex justify-start space-x-6">
+
+          <div class="floating-form w-2/4 pt-8">
+
+
+            <div class="floating-label">
+              <input class="floating-input text-gray-500" type="text" placeholder=" ">
+              <span class="highlight"></span>
+              <label>Digite nova senha</label>
+            </div>
+
+            <div class="floating-label">
+              <input class="floating-input text-gray-500" type="text" placeholder=" ">
+              <span class="highlight"></span>
+              <label>Confirme nova senha</label>
+            </div>
+          </div>
+
+          <div class="w-5/12 mt-4 p-2 h-auto bg-yellow-50 text-left font-semibold">
+            <ul class="text-xxxs md:text-xxxs text-red-400">
+              <li>
+                * A senha deve conter 6 dígitos.
+              </li>
+              <li>
+                * Não pode conter sequências (ex. 1234567).
+              </li>
+              <li>
+                * Não pode ter dígito inicial igual a 0 (ex. 0123456).
+              </li>
+              <li>
+                * Não pode ter dígito repetido (ex. 111111).
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 flex justify-end space-x-8 float-right">
+          <button class="w-1/2 mt-8
+            lg:w-3/12
+            xl:text-sx xl:w-1/2
+            bg-transparent hover-bg-blue-ID text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            Limpar
+          </button>
+          <button class="w-1/2 float-right mt-8
+            lg:w-3/12
+            xl:text-sx xl:w-1/2
+            bg-green-500 text-white font-semibold py-2 px-4 border rounded">
+            Salvar
+          </button>
+
+        </div>
+      </form>
+
+    </div>
+    <div class="w-11/12 sm:w-3/4 lg:w-8/12 xl:w-7/12 mx-auto mt-24 lg:mt-40">
+      <h1 class="text-blue-ID font-bold text-xl lg:text-lg">
+        Vincular matrícula
+      </h1>
+      <p class="mt-2 text-gray-500 font-semibold text-sx">
+        Prezado servidor, indentificamos por meio do número do seu CPF a(s) matrícula(s) abaixo.
+        <br>
+        Deseja vincular estas matrículas às senhas cadastradas na etapa anterior?
+      </p>
+
+      <form class="bg-white w-full mt-8">
+
+
+        <div class="form-line w-full flex justify-start space-x-6">
+
+          <div class="floating-form w-2/4 pt-8">
+
+            <div class="flex justify-start">
+              <div class="w-1/12">
+                <input type="checkbox" name="mat-1" id="">
+              </div>
+              <div class="floating-label">
+                <input class="floating-input input-validated-meu-primeiro-acesso text-gray-500" type="text" placeholder=" " value="12700000">
+                <span class="highlight"></span>
+                <label>Matrícula 2</label>
+              </div>
+
+            </div>
+            <div class="flex justify-start">
+              <div class="w-1/12">
+                <input type="checkbox" name="mat-1" id="">
+              </div>
+              <div class="floating-label">
+                <input class="floating-input input-validated-meu-primeiro-acesso text-gray-500" type="text" placeholder=" " value="12700000">
+                <span class="highlight"></span>
+                <label>Matrícula 2</label>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+        <div class="w-full lg:w-1/2 flex justify-end space-x-8 float-right">
+          <span class="text-xxs mt-12">
+            1 matrícula vinculada
+          </span>
+          </button>
+          <button class="w-1/2 float-right mt-8
+            lg:w-3/12
+            xl:text-sx xl:w-1/2
+            bg-green-500 text-white font-semibold py-2 px-4 border rounded">
+            Salvar
+          </button>
+
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
