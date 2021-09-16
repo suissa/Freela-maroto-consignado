@@ -1,0 +1,14 @@
+Apágina 04 é a mesmo da MC - 01 - home V3 A, de acompanhamento de propostas?
+
+
+fundo q vai em tds aspagescomo logo em cinza
+- page 1: banner
+- page 2: banner
+- page 3: banner
+- page 4: icones da tabela
+- page 8: icon donload
+- page 18: icon de atenção
+- page 20: imagem do modal
+- page 21: icons das bolinhas
+- page 25: imagem ticket
+- page 36: imagem do modal

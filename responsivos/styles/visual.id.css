@@ -27,6 +27,9 @@
   color: var(--card-ofertas-txt);
 }
 
+.menu-facilidades-text {
+  color: var(--blue-dark);
+}
 
 @media (min-width: 1500px) {
   .card-large {

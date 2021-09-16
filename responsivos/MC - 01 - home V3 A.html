@@ -227,14 +227,16 @@
     <div class="w-11/12 mx-auto mt-20 mb-16">
       <h3 class="text-blue-ID text-2xl text-left sm:text-center font-bold mb-10">Benefícios exclusivos</h3>
       <!-- <img src="./images/cards-all.png" alt=""> -->
-      <ul class="w-10/12 mx-auto lg:w-11/12 grid grid-cols-1 lg:grid-cols-6 gap-4">
-        <li class="flex-grow text-center h-44 md:h-72 lg:h-36">
+      <ul class="w-full mx-auto grid grid-rows-3 grid-flow-col
+      lg:w-11/12 lg:grid-flow-row lg:grid-cols-6 lg:grid-rows-1 gap-4">
+        <li class="flex-grow text-center h-28 md:h-72 lg:h-36">
           <a href="#" class="relative">
             <div class="w-full h-full card-simulacao rounded-xl 
-            lg:h-24
+            lg:h-28
             xl:h-32
             ">
               <img src="./images/icon-simulacao.png" alt="" class="mx-auto pt-8
+              w-8
               lg:w-8 lg:pt-4
               xl:w-8 xl:pt-6 
               2xl:w-8">
@@ -244,16 +246,17 @@
             </div>
           </a>
         </li>
-        <li class="flex-grow text-center h-44 md:h-72 lg:h-36">
+        <li class="flex-grow text-center h-28 md:h-72 lg:h-36">
           <a href="#" class="relative">
             <div class="w-full h-full card-contratacao rounded-xl 
-            lg:h-24
+            lg:h-28
             xl:h-32">
               <img src="./images/icon-contratacao.png" alt="" class="mx-auto pt-4
+              w-8
               lg:w-8 lg:pt-4
               xl:w-9
               2xl:w-10">
-              <span class="block mt-2 text-2xl text-center font-bold
+              <span class="block mt-2 text-xl text-center font-bold
                           lg:text-lg lg:mt-0
                           xl:text-xl">
                 Contratação
@@ -261,16 +264,17 @@
             </div>
           </a>
         </li>
-        <li class="flex-grow text-center h-44 md:h-72 lg:h-36">
+        <li class="flex-grow text-center h-28 md:h-72 lg:h-36">
           <a href="#" class="relative">
             <div class="w-full h-full card-ofertas rounded-xl 
-            lg:h-24
+            lg:h-28
             xl:h-32 xl:pt-4">
               <img src="./images/icon-ofertas.png" alt="" class="mx-auto pt-9
+              w-8
               lg:w-10 lg:pt-6
               xl:w-10 xl:pt-3
               2xl:w-10">
-              <span class="block mt-2 text-2xl text-center font-bold
+              <span class="block mt-2 text-xl text-center font-bold
                           lg:text-lg lg:mt-1
                           xl:text-xl xl:mt-2
                           2xl:mt-3">
@@ -279,31 +283,31 @@
             </div>
           </a>
         </li>
-        <li class="flex-grow text-center h-auto lg:h-36">
+        <li class="flex-grow text-center h-28 lg:h-36">
           <a href="#">
             
             <div class="w-full h-full ">
               <img src="./images/card-pg-facil-bg.png" alt="" class="w-full rounded-xl
-                h-auto
+                h-28
                 md:h-80
                 lg:h-24
                 xl:h-32 xl:pt-0">
             </div>
           </a>
         </li>
-        <li class="flex-grow text-center h-auto lg:h-36">
+        <li class="flex-grow text-center h-28 lg:h-36">
           <a href="#">
             <img src="./images/card-use-mais-bg.png" alt="" class="w-full rounded-xl
-            h-auto
+            h-28
             md:h-80
               lg:h-24
               xl:h-32 xl:pt-0">
           </a>
         </li>
-        <li class="flex-grow text-center h-auto lg:h-36">
+        <li class="flex-grow text-center h-28 lg:h-36">
           <a href="#">
             <img src="./images/card-use-digi-bg.png" alt="" class="w-full rounded-xl
-            h-auto
+            h-28
             md:h-80
               lg:h-24
               xl:h-32  xl:pt-0">
@@ -517,43 +521,118 @@
 
 
 
-    <div class="w-11/12 mx-auto mt-20 mb-16">
-      <h3 class="text-blue-ID text-2xl text-left sm:text-center font-bold mb-10">Benefícios exclusivos</h3>
+    <div class="w-10/12 lg:w-11/12 mx-auto mt-20 mb-16">
+      <h3 class="text-blue-ID text-2xl text-left sm:text-center font-bold mb-10">Facilidades para você</h3>
       <!-- <img src="./images/cards-all.png" alt=""> -->
-      <ul class="w-10/12 mx-auto lg:w-11/12 grid justify-between grid-cols-1 lg:grid-cols-5 gap-4
-      md:w-2/4
-      p-4 bg-white shadow-md
-      mt-10 mx-auto rounded-xl
+      <ul class="w-11/12 mx-auto grid justify-between grid-cols-1 gap-4
+      mt-10 mx-auto rounded-xl p-2
+      bg-white shadow-md
+      md:w-2/4 md:p-4 
+      lg:w-8/12 lg:grid-cols-5
       ">
-        <li class="flex-grow text-center">
-          <a href="#">
-            <img class="w-full" src="./images/menu-minhas-consignacoes.png" alt="">
+        <li class="w-full flex-grow text-center">
+          <a href="#" class="grid justify-between grid-cols-3 
+            lg:grid-cols-5
+            2xl:grid-cols-7">
+            <img 
+            class="w-8/12 
+                    lg:col-span-2 lg:w-10/12 lg:mt-1
+                    2xl:w-full 2xl:col-span-2 2xl:mt-0
+                    " 
+              src="./images/icon-beneficios-minhas-consignacoes.png" alt="">
+
+            <span 
+              class="inline-block mt-2 col-span-2
+                    uppercase text-md text-left font-bold menu-facilidades-text
+                    lg:text-xs lg:mt-4 lg:w-full lg:col-span-3
+                    xl:text-xs xl:mt-5
+                    2xl:mt-4 2xl:ml-4 2xl:col-span-5 2xl:text-lg
+                    ">minhas <br>consignações</span>
           </a>
         </li>
-        <li class="flex-grow">
-          <a href="#">
-            <img class="w-full" src="./images/menu-mensagens.png" alt="">
+        <li class="w-full flex-grow text-center">
+          <a href="#" class="grid justify-between grid-cols-3 
+            lg:grid-cols-5
+            2xl:grid-cols-7">
+            <img 
+            class="w-8/12 
+                    lg:col-span-2 lg:w-10/12 lg:mt-2
+                    " 
+              src="./images/icon-beneficios-fale-conosco.png" alt="">
+
+            <span 
+            class="inline-block mt-2 col-span-2
+                  uppercase text-md text-left font-bold menu-facilidades-text
+                  lg:text-xs lg:mt-4 lg:w-full lg:col-span-3
+                  xl:text-xs xl:mt-5
+                  2xl:mt-6 2xl:ml-4 2xl:col-span-5 2xl:text-lg
+                    ">fale conosco</span>
           </a>
         </li>
-        <li class="flex-grow">
-          <a href="#">
-            <img class="w-full" src="./images/menu-fale-banco.png" alt="">
+        <li class="w-full flex-grow text-center">
+          <a href="#" class="grid justify-between grid-cols-3 
+            lg:grid-cols-5
+            2xl:grid-cols-7">
+            <img 
+            class="w-8/12 
+                    lg:col-span-2 lg:w-10/12 lg:mt-1
+                    " 
+              src="./images/icon-beneficios-perguntas-frequentes.png" alt="">
+
+            <span 
+            class="inline-block mt-2 col-span-2
+                  uppercase text-md text-left font-bold menu-facilidades-text
+                  lg:text-xs lg:mt-4 lg:w-full lg:col-span-3
+                  xl:text-xs xl:mt-5
+                  2xl:mt-4 2xl:ml-4 2xl:col-span-5 2xl:text-lg
+                    ">perguntas frequentes</span>
           </a>
         </li>
-        <li class="flex-grow">
-          <a href="#">
-            <img class="w-full" src="./images/menu-fale-conosco.png" alt="">
+        <li class="w-full flex-grow text-center">
+          <a href="#" class="grid justify-between grid-cols-3 
+            lg:grid-cols-5
+            2xl:grid-cols-7">
+            <img 
+            class="w-8/12 
+                    lg:col-span-2 lg:w-10/12 lg:mt-1
+                    " 
+              src="./images/icon-beneficios-mensagens.png" alt="">
+
+            <span 
+            class="inline-block mt-2 col-span-2
+                  uppercase text-md text-left font-bold menu-facilidades-text
+                  lg:text-xs lg:mt-4 lg:w-full lg:col-span-3
+                  xl:text-xs xl:mt-5
+                  2xl:mt-6 2xl:ml-4 2xl:col-span-5 2xl:text-lg
+                    ">mensagens</span>
           </a>
         </li>
-        <li class="flex-grow">
-          <a href="#">
-            <img class="w-full" src="./images/menu-perguntas-frequentes.png" alt="">
+        <li class="w-full flex-grow text-center">
+          <a href="#" class="grid justify-between grid-cols-3 
+            lg:grid-cols-5
+            2xl:grid-cols-7">
+            <img 
+            class="w-8/12 
+                    lg:col-span-2 lg:w-10/12 lg:mt-1
+                    " 
+              src="./images/icon-beneficios-fale-com-banco.png" alt="">
+
+            <span 
+            class="inline-block mt-2 col-span-2
+                  uppercase text-md text-left font-bold menu-facilidades-text
+                  lg:text-xs lg:mt-4 lg:w-full lg:col-span-3
+                  xl:text-xs xl:mt-5
+                  2xl:mt-4 2xl:ml-4 2xl:col-span-5 2xl:text-lg
+                    ">fale com <br>o banco</span>
           </a>
         </li>
       </ul>
 
-      <div>
+      <div class="hidden md:block">
         <img src="./images/banner-use-digi.jpg"  class="flex-grow lg:w-7/12 mx-auto rounded-xl mt-12 mb-16" alt="">
+      </div>
+      <div class="md:hidden">
+        <img src="./images/banner-use-digi-mobile.png"  class="flex-grow lg:w-7/12 mx-auto rounded-xl mt-12 mb-16" alt="">
       </div>
     </div>
 
