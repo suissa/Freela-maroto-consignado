@@ -252,6 +252,23 @@ body  .text-blue-dark {
 }
 
 
+.\32xl\:text-xss {
+  font-size: 0.8rem !important;
+}
+
+.\32xl\:text-sx {
+  font-size: 0.875rem !important;
+}
+
+.\32xl\:text-xl {
+  font-size: 1.25rem !important;
+}
+
+.\32xl\:text-base {
+  font-size: 1rem !important;
+}
+
+
 /* Making the label break the flow */
 .floating-label
 {
