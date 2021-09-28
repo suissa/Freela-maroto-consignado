@@ -19,17 +19,26 @@
     html{
       margin-bottom: 60px;
     }
+    #top-primeiro-acesso {
+      background: url("./images/bg-top-dashboard.png");
+      background-size: 100%;
+      height: 110px;
+    }
   </style>
 </head>
 <body>
 
   <div class="w-full mb-4">
-    <div class="w-full">
+    <div class="w-full hidden md:block">
       <img class="w-full" src="./images/bg-top-primeiro-acesso.jpg" alt="">
 
     </div>
+    <div class="w-full block md:hidden" id="top-primeiro-acesso">
+      <img src="./images/logo-white.png" alt="" class="w-8/12 block mx-auto pt-4">
+      <h2 class="text-white text-center text-xl mt-2 font-semibold">Primeiro acesso</h2>
+    </div>
 
-    <div class="w-11/12 sm:w-3/4 lg:w-8/12 xl:w-7/12 mx-auto mt-4">
+    <div class="w-10/12 sm:w-3/4 lg:w-8/12 xl:w-7/12 mx-auto mt-4">
       <h1 class="text-blue-ID font-bold text-xl lg:text-lg">
         Cadastrar senha de acesso ao Portal, App Meu Consignado e Use Mais Store
       </h1>
@@ -79,7 +88,7 @@
     </div>
 
 
-    <div class="w-11/12 sm:w-3/4 lg:w-8/12 xl:w-7/12 mx-auto mt-10 md:mt-4">
+    <div class="w-10/12 sm:w-3/4 lg:w-8/12 xl:w-7/12 mx-auto mt-10 md:mt-4">
       <h1 class="text-blue-ID font-bold text-xl lg:text-lg">
         Cadastrar senha da consignação
       </h1>
@@ -126,7 +135,7 @@
       </form>
 
     </div>
-    <div class="w-11/12 sm:w-3/4 lg:w-8/12 xl:w-7/12 mx-auto mt-24 lg:mt-40">
+    <div class="w-10/12 sm:w-3/4 lg:w-8/12 xl:w-7/12 mx-auto mt-10 lg:mt-10">
       <h1 class="text-blue-ID font-bold text-xl lg:text-lg">
         Vincular matrícula
       </h1>
@@ -136,7 +145,7 @@
         Deseja vincular estas matrículas às senhas cadastradas na etapa anterior?
       </p>
 
-      <form class="bg-white w-full mt-2">
+      <form class="bg-white w-full mt-4">
 
 
         <div class="form-line w-full flex justify-start space-x-6">

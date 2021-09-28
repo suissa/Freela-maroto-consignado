@@ -51,7 +51,6 @@
 }
 
 .table-tr td {
-  padding: 2px;
   margin-left: 4px;
 }
 
@@ -86,7 +85,7 @@
   }
 
   .table-responsible td {
-    padding: .625rem 0;
+    /* padding: .625rem 0; */
     text-align: left;
   }
 

@@ -195,11 +195,7 @@ select {
 }
 
 #icon-chat {
-  /* position: absolute;
-  top: 400px;
-  right: 20px; */
-  filter: drop-shadow(0px 4px 14px #666);
-  padding-right: 30px;
+  filter: drop-shadow(0px 4px 6px #999);
 }
 
 #icon-chat img {
