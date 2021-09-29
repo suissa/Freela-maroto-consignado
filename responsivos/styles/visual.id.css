@@ -535,3 +535,10 @@ body .text-xxxxs {
   }
 
 }
+
+textarea {
+  border: inherit;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}

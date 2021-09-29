@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela 10</title>
+  <title>Tela 01</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css" integrity="sha512-ifsLB5FigXH07aADF1bmVX8B66KrNLZGT6RY9HPN3hTn9eaP+t16azYMAuULHZJyR8zC4O5Vt/76YZG6jNktIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link
@@ -18,25 +18,182 @@
   <link rel="stylesheet" href="./styles/dashboard.css" />
   <link rel="stylesheet" href="./styles/tables.css" />
 
-  <style>
-    /* html, body {
-      height: 100%;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-    main {
-      flex: 1 0 auto;
-    }
-    footer {
-      flex-shrink: 0;
-    } */
-
-  </style>
 
 </head>
 <body>
+  
+  <div wire:loading class="w100vw gradient-modal fixed 
+  top-0 left-0 right-0 bottom-0 h-screen z-9999 overflow-hidden 
+  bg-gray-700 opacity-100 flex flex-col items-center justify-center">
+    <!-- <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
+    <h2 class="text-center text-white text-xl font-semibold">Loading...</h2>
+    <p class="w-1/3 text-center text-white">This may take a few seconds, please don't close this page.</p> -->
+
+    <!--Modal-->
+
+    <div class="modal-container bg-gray-50 w-full h-auto p-4
+      md:w-8/12 mx-auto rounded-xl shadow-lg z-9999 overflow-y-auto">
+
+      <!--Title-->
+      <div class="text-center pb-3 mt-0">
+        <h3 class="w-full mx-auto text-2xl text-centers font-bold text-blue-ID">
+          Cancelar Agendamento
+        </h3>
+      </div>
+
+      <div class="modal-content py-4 text-center px-6 rounded-xl">
+
+        <!--Body-->
+        
+        <div class="w-full mx-auto mt-0">
+
+          <div class="shadow-md main-first-cell bg-white rounded p-2 border-2 h-auto">
+            <table class="table table-responsible zebra hovered ">
+              <thead class="thead gradient-top rounded text-white h-8 mb-0">
+                <tr class="text-xxxs lg:text-sx flex justify-between items-center text-left text-white p-2 font-bold">
+                  <th scope="col" class="sm:w-8 sm:pl-1"></th>
+                  <th scope="col" class="sm:w-2/12 sm:pl-1">N° Protocolo</th>
+                  <th scope="col" class="sm:w-1/12 sm:pl-1">Data</th>
+                  <th scope="col" class="sm:w-1/12 sm:pl-1">Hora</th>
+                  <th scope="col" class="sm:w-1/12 sm:pl-1">Tipo</th>
+                  <th scope="col" class="sm:w-1/12 sm:pl-4">Status</th>
+                  <th scope="col" class="sm:w-3/12 sm:pl-4">Motivo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="text-xxxs lg:text-xss 
+                  table-tr flex justify-between items-center text-left text-gray-700 font-semibold md:py-2">
+                  <td data-label="" class="sm:w-8 sm:pl-4">
+                    <div class="container">
+                      <div class="round">
+                        <input type="checkbox" id="checkbox1" checked />
+                        <label for="checkbox1"></label>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td data-label="N° Protocolo" class="sm:w-2/12 sm:pl-0">
+                    3024212121212121
+                  </td>
+
+                  <td data-label="Data" class="sm:w-1/12 sm:pl-1">
+                    10/08/2021
+                  </td>
+
+                  <td data-label="Hora" class="sm:w-1/12 sm:pl-1">
+                    10:25:10
+                  </td>
+
+                  <td data-label="Tipo" class="sm:w-1/12 sm:pl-1">
+                    Presencial
+                  </td>
+
+                  <td data-label="Status" class="sm:w-1/12 sm:pl-4">
+                    Agendada
+                  </td>
+
+                  <td data-label="Motivo" class="sm:w-3/12 sm:pl-4">
+                    Outro Compromisso
+                  </td>
+                </tr>
+                <tr class="text-xxxs lg:text-xss 
+                  table-tr flex justify-between items-center text-left text-gray-700 font-semibold md:py-2">
+                  <td data-label="" class="sm:w-8 sm:pl-4">
+                    <div class="container">
+                      <div class="round">
+                        <input type="checkbox" id="checkbox2" />
+                        <label for="checkbox2"></label>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td data-label="N° Protocolo" class="sm:w-2/12 sm:pl-0">
+                    3024212121212121
+                  </td>
+
+                  <td data-label="Data" class="sm:w-1/12 sm:pl-1">
+                    10/08/2021
+                  </td>
+
+                  <td data-label="Hora" class="sm:w-1/12 sm:pl-1">
+                    10:25:10
+                  </td>
+
+                  <td data-label="Tipo" class="sm:w-1/12 sm:pl-1">
+                    Presencial
+                  </td>
+
+                  <td data-label="Status" class="sm:w-1/12 sm:pl-4">
+                    Agendada
+                  </td>
+
+                  <td data-label="Motivo" class="sm:w-3/12 sm:pl-4">
+                    Outro Compromisso
+                  </td>
+                </tr>
+                <tr class="text-xxxs lg:text-xss 
+                  table-tr flex justify-between items-center text-left text-gray-700 font-semibold md:py-2">
+                  <td data-label="" class="sm:w-8 sm:pl-4">
+                    <div class="container">
+                      <div class="round">
+                        <input type="checkbox" id="checkbox3" />
+                        <label for="checkbox3"></label>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td data-label="N° Protocolo" class="sm:w-2/12 sm:pl-0">
+                    3024212121212121
+                  </td>
+
+                  <td data-label="Data" class="sm:w-1/12 sm:pl-1">
+                    10/08/2021
+                  </td>
+
+                  <td data-label="Hora" class="sm:w-1/12 sm:pl-1">
+                    10:25:10
+                  </td>
+
+                  <td data-label="Tipo" class="sm:w-1/12 sm:pl-1">
+                    Presencial
+                  </td>
+
+                  <td data-label="Status" class="sm:w-1/12 sm:pl-4">
+                    Agendada
+                  </td>
+
+                  <td data-label="Motivo" class="sm:w-3/12 sm:pl-4">
+                    Outro Compromisso
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="w-full mx-auto mt-10">
+            <h4 class="text-xl text-left font-semibold text-blue-ID">
+              Motivo do cancelamento:
+            </h4>
+            <textarea class="w-full mx-auto mt-4 p-2 border-2 border-gray-100 rounded-lg bg-white
+            focus:ring-1 focus:ring-blue-500" name="" id="" cols="30" rows="4">Escreva aqui...
+            </textarea>
+          </div>
+
+        </div>
+        <!--Footer-->
+        <div class="mt-4 mb-12">
+
+          <button class="float-right bg-blue-700 mx-auto w-4/12 h-10 m-1 hover:bg-blue-500 text-white text-xxs font-semibold py-2 px-4 rounded">
+            Confirmar Cancelamento
+          </button>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
   <header class="header-dashboard h-40 ">
 
     <div class="w-11/12 h-40 mx-auto flex justify-between items-center text-center text-white">
@@ -434,7 +591,7 @@
     <div class="w-11/12 mx-auto mt-2 mb-16">
 
       <h3 class="text-blue-ID text-2xl mb-10 text-center font-semibold">Fale conosco</h3>
-      <div class="w-full sm:w-9/12 sm:mx-auto h-auto pb-4 bg-white shadow-md rounded-lg">
+      <div class="w-full sm:w-9/12 sm:mx-auto h-auto pb-10 bg-white shadow-md rounded-lg">
 
           <div class="tsum-tabs tsum-tabs-4">
             <main class="w-11/12 mx-auto">
@@ -586,6 +743,11 @@
                         </tr>
                       </tbody>
                   </table>
+                  <div class="w-full align-right mb-4">
+                    <button class="mt-4 rounded bg-blue-700 float-right px-4 py-4 text-white text-xs">
+                      Cancelar Agendamento
+                    </button>
+                  </div>
                 </div>
               </section>
 
@@ -622,13 +784,6 @@
 
 
             </main>
-            <div class="w-full">
-              <button class="w-4/12 float-right mt-8 mb-10
-                lg:h-14 xl:text-base
-                bg-blue-ID hover:bg-blue-700 text-white font-semibold py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                Cancelar Agendamento
-              </button>
-            </div>
           </div>
         </div>
 

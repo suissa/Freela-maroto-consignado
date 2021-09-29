@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela 10</title>
+  <title>Tela 12</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css" integrity="sha512-ifsLB5FigXH07aADF1bmVX8B66KrNLZGT6RY9HPN3hTn9eaP+t16azYMAuULHZJyR8zC4O5Vt/76YZG6jNktIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link
@@ -430,22 +430,22 @@
         </li>
       </ul>
     </div>
-    <!-- cards -->
+    <!-- tabs -->
     <div class="w-11/12 mx-auto mt-2 mb-16">
 
       <h3 class="text-blue-ID text-2xl mb-10 text-center font-semibold">Fale conosco</h3>
-      <div class="w-full sm:w-9/12 sm:mx-auto h-auto pb-4 bg-white shadow-md rounded-lg">
+      <div class="w-full sm:w-9/12 sm:mx-auto h-auto pb-10 bg-white shadow-md rounded-lg">
 
           <div class="tsum-tabs tsum-tabs-4">
             <main class="w-11/12 mx-auto">
 
-              <input id="tab1" type="radio" name="tabs" checked>
+              <input id="tab1" type="radio" name="tabs">
               <label for="tab1" class="bg-white
               font-semibold
               hover:text-blue-800
               uppercase">Meus Agendamentos</label>
 
-              <input id="tab2" type="radio" name="tabs">
+              <input id="tab2" type="radio" name="tabs" checked>
               <label for="tab2" class="bg-white
               hover:text-blue-800
               uppercase">Com Central</label>
@@ -586,22 +586,97 @@
                         </tr>
                       </tbody>
                   </table>
+                  <div class="w-full align-right mb-4">
+                    <button class="mt-4 rounded bg-blue-700 float-right px-4 py-4 text-white text-xs">
+                      Cancelar Agendamento
+                    </button>
+                  </div>
                 </div>
               </section>
 
               <section id="content2">
-                <p>
-                  Seus dados profissionais não podem ser alterados pelo Portal,
-                  caso as informações estejam desatualizadas, compareça ao RH
-                  da sua unidade e solicite a atualização.
+                
+                <form class="w-full pb-10">
+                  <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label class="text-blue-ID block tracking-wide text-gray-700 text-md font-bold mb-2" for="grid-secretaria">
+                        Convênio
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-secretaria" type="text" placeholder="Jane">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                      <label class="text-blue-ID block tracking-wide text-gray-700 text-md font-bold mb-2" for="grid-numero-ordem">
+                        Motivo
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200
+                      rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="grid-numero-ordem" type="text" placeholder="Doe">
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-full px-3 mb-6 md:mb-0">
+                      <label class="text-blue-ID block tracking-wide text-gray-700 text-md font-bold mb-2" for="grid-matricula">
+                        Nome
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
+                      rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                      id="grid-matricula" type="text" placeholder="Jane">
 
-                </p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label class="text-blue-ID block tracking-wide text-gray-700 text-md font-bold mb-2" for="grid-matricula">
+                        Nascimento
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
+                      rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                      id="grid-matricula" type="text" placeholder="Jane">
 
-                <button class="w-4/12 float-right mt-2
-                  lg:h-14 xl:text-xl
-                  bg-blue-ID hover:bg-blue-700 text-white font-semibold py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                  Próximo
-                </button>
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                      <label class="text-blue-ID block tracking-wide text-gray-700 text-md font-bold mb-2"  for="grid-neocard">
+                        CPF
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200
+                      rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="grid-neocard" type="text" placeholder="Doe">
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-full px-3 mb-6 md:mb-0">
+                      <label class="text-blue-ID block tracking-wide text-gray-700 text-md font-bold mb-2" for="grid-matricula">
+                        E-mail
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border
+                      rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                      id="grid-matricula" type="text" placeholder="fulano@email.com">
+
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label class="text-blue-ID block tracking-wide text-gray-700 text-md font-bold mb-2" for="grid-lotacao">
+                        Telefone
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-lotacao" type="text" placeholder="Jane">
+
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                      <label class="text-blue-ID block tracking-wide text-gray-700 text-md font-bold mb-2" for="grid-situacao">
+                        Tipo de Atendimento
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-situacao" type="text" placeholder="Doe">
+                    </div>
+                  </div>
+                  
+                  <button class="w-4/12 float-right mt-2
+                    lg:h-14 xl:text-xl
+                    bg-blue-ID hover:bg-blue-700 text-white font-semibold py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    Próximo
+                  </button>
+                </form>
+
               </section>
 
               <section id="content3">
@@ -622,13 +697,6 @@
 
 
             </main>
-            <div class="w-full">
-              <button class="w-4/12 float-right mt-8 mb-10
-                lg:h-14 xl:text-base
-                bg-blue-ID hover:bg-blue-700 text-white font-semibold py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                Cancelar Agendamento
-              </button>
-            </div>
           </div>
         </div>
 
