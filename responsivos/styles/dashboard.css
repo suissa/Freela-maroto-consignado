@@ -231,18 +231,32 @@ footer {
   border: 1px transparent solid;
   margin-right: -5px;
   border-bottom: 1px solid #bbd6f2;
-  padding: 16px 20px;
   padding-top: 12px;
-  font-size: 0.7rem;
+  padding-bottom: 10px;
+  font-size: 0.6rem;
   font-weight: 700;
   position: relative;
   top: 18px;
   width: 33%;
 }
 
+body .tsum-tabs-4 main > label {
+  width: 25% !important;
+}
+
 @media screen and (min-width: 640px) {
   .tsum-tabs main > label {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .tsum-tabs main > label {
+    font-size: 0.8rem;
+  }
+  
+  body .tsum-tabs-4 main > label {
+    font-size: 0.7rem;
   }
 }
 
