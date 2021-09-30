@@ -549,7 +549,8 @@ textarea {
   overflow: hidden;
   background: url(./../images/icon-select.png) no-repeat right #fff;
   border: 1px solid #a1ceff;
-  border-radius: 6px;
+  border-color: rgba(147, 197, 253, 1);
+  border-radius: 4px;
   background-position-x: 96%;
   padding-left: 10px;
 }   
@@ -558,12 +559,9 @@ textarea {
   background: transparent; /* importante para exibir o novo ícone */
   width: 100%;
   
-  font-size: 0.8rem !important;
   padding: 2px;
   padding-top: 6px;
 
-  font-size: 16px;
-  line-height: 1;
   border: 0;
   border-radius: 0;
   height: 34px;
