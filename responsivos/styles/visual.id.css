@@ -551,7 +551,7 @@ textarea {
   border: 1px solid #a1ceff;
   border-color: rgba(147, 197, 253, 1);
   border-radius: 4px;
-  background-position-x: 96%;
+  background-position-x: calc(100% - 10px);
   padding-left: 10px;
 }   
 
@@ -568,4 +568,8 @@ textarea {
   -webkit-appearance: none;
   outline: none;
   appearance: none;
+}
+
+.button-green {
+  background-color: #00bf69;
 }
