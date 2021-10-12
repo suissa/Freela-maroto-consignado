@@ -1,0 +1,60 @@
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.table.main-first-cell .tr .td {
+  flex-grow: 0;
+  flex: none;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+}
+.table.main-first-cell .tr .td:first-child {
+  flex-grow: 1;
+  flex-direction: row;
+  display: flex;
+  justify-content: start;
+}
+/* .table.striped .tbody .tr:nth-of-type(even) .td {
+  background-color: #fff;
+} */
+.table.hovered .tbody .tr:hover .td {
+  background-color: #f1f5f8;
+}
+/* .table .thead {
+  font-weight: 700;
+} */
+/* .table .thead .tr .td {
+  color: #f1f5f8;
+  background-color: #3d4852;
+  text-transform: uppercase;
+} */
+.table .tbody .tr .td {
+  background-color: #f8fafc;
+}
+.table .tr {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+.table .tr .td {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  word-break: break-word;
+  /* padding: 1rem; */
+  margin: 0.25rem;
+}
+
+.table-tr td {
+  padding: 2px;
+  margin-left: 4px;
+}
+
+.zebra tbody tr:nth-child(odd) {
+  background-color: #eee;
+}

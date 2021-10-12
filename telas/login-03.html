@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela 01</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css" integrity="sha512-ifsLB5FigXH07aADF1bmVX8B66KrNLZGT6RY9HPN3hTn9eaP+t16azYMAuULHZJyR8zC4O5Vt/76YZG6jNktIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css"
+  />
+
+  <link rel="stylesheet" href="./styles/visual.id.css" />
+  <link rel="stylesheet" href="./styles/forms.css" />
+
+</head>
+<body>
+
+  <div class="flex mb-4 sm:w-full max-w-ws" id="container-site">
+    <div class="w-1/2 hidden sm:block" id="bg-full">
+      <!-- <img src="./images/bg-01.jpg" alt=""> -->
+    </div>
+
+    <div class="sm:w-1/2 w-full max-w-ws">
+      
+      <div class="flex w-full max-w-ws">
+        <div class="w-1/5"></div>
+        <div class="w-3/5 sm:w-full max-w-ws">
+        
+          <div class="w-full max-w-xs">
+
+            <p class="mt-20">
+              <img class="mx-auto" src="./images/logo-01-color.png" alt="">
+            </p>
+            <p class="m-4 mt-6">
+              <h2 class="text-blue-ID text-center text-xl font-bold">Acesso ao sistema</h2>
+            </p>
+  
+
+            <form class="bg-white w-full max-w-xs mt-14">
+              
+              <div class="floating-form">
+                <div class="floating-label">      
+                  <input class="floating-input" type="text" placeholder=" ">
+                  <span class="highlight"></span>
+                  <label>CPF</label>
+                </div>
+                
+                <div class="floating-label">      
+                  <input class="floating-input" type="text" placeholder=" ">
+                  <span class="highlight"></span>
+                  <label>Matrícula</label>
+                </div>
+
+                <p class="mt-10">
+                  <a href="login-04.html">
+                    <button class="w-full bg-blue-ID hover:bg-blue-700 text-white py-2 px-4 rounded">
+                      Avançar
+                    </button>
+                  </a>
+                </p>
+            </form>
+          
+          </div>
+          
+
+        </div>
+        <div class="w-1/5">
+          <a href="#" class="fixed" id="icon-chat">
+            <img src="./images/icon-chat.png" alt="Fale com nosso atendente">
+          </a>
+        </div>
+      </div>
+    
+    </div>
+
+  </div>
+  
+</body>
+</html>

@@ -253,6 +253,18 @@ body .text-xxxxs {
   font-size: 0.5rem;
 }
 
+body .font-normal {
+  font-weight: normal;
+}
+
+body th.font-normal {
+  font-weight: normal;
+}
+
+body th.th-21 {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
 
 @media (min-width: 1500px) {
   body .\32xl\:text-xss {
