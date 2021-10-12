@@ -266,6 +266,10 @@ body th.th-21 {
   font-size: 0.9rem;
 }
 
+body .h\-100 {
+  height: 30rem ;
+}
+
 @media (min-width: 1500px) {
   body .\32xl\:text-xss {
     font-size: 0.8rem;
