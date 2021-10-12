@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela 27</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css" integrity="sha512-ifsLB5FigXH07aADF1bmVX8B66KrNLZGT6RY9HPN3hTn9eaP+t16azYMAuULHZJyR8zC4O5Vt/76YZG6jNktIA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css"
+  />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/visual.id.css" />
+  <link rel="stylesheet" href="./styles/dashboard.css" />
+  <link rel="stylesheet" href="./styles/tables.css" />
+
+</head>
+<body>
+  
+  <div wire:loading class="w100vw gradient-modal fixed 
+  top-0 left-0 right-0 bottom-0 h-screen z-9999 overflow-hidden 
+  bg-gray-700 opacity-100 flex flex-col items-center justify-center">
+    <!-- <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
+    <h2 class="text-center text-white text-xl font-semibold">Loading...</h2>
+    <p class="w-1/3 text-center text-white">This may take a few seconds, please don't close this page.</p> -->
+
+    <!--Modal-->
+
+    <div class="modal-container bg-gray-50 w-full h-auto p-8
+      md:w-6/12 mx-auto rounded-xl shadow-lg z-9999 overflow-y-auto">
+
+      <!--Title-->
+      <div class="text-center pb-3 mt-0">
+        <h3 class="w-full mx-auto text-4xl text-centers font-bold text-blue-ID">
+          Solicitação aberta
+        </h3>
+      </div>
+
+      <div class="modal-content py-4 text-center px-6 rounded-xl">
+
+        <!--Body-->
+        
+        <div class="w-full mx-auto mt-0">
+
+          <div class="w-full h-full p-4 mb-8 bg-green-100">
+            Sua solicitação está aguardando resposta do estabelecimento
+          </div>
+          
+          <div class="w-full h-full mb-4
+          rounded-xl 
+          bg-white">
+            <h5 class="gradient-top rounded font-medium text-lg text-center text-white py-2">
+              Dados do Estabelecimento
+            </h5>
+            <div class="border-2 border-blue-500 py-2 px-10 h-auto">
+              <ul class="font-medium text-xl text-gray-500 text-left pt-4 ml-4 mt-2">
+                <li class="mb-2">Estabelecimento: ESTABELECIMENTO</li>
+                <li class="mb-2">Endereço: ENDEREÇO</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!--Footer-->
+        <div class="mt-4 mb-12">
+
+          <button class="float-right bg-blue-700 mx-auto w-4/12 h-10 m-1 hover:bg-blue-500 text-white text-xxs font-semibold py-2 px-4 rounded">
+            Confirmar Cancelamento
+          </button>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <header class="header-dashboard h-40 ">
+
+    <div class="w-11/12 h-40 mx-auto flex justify-between items-center text-center text-white">
+      <div class="w-5/12 mt-10">
+
+        <img src="./images/logo-white.png" class="lg:w-9/12 2xl:w-8/12" alt="">
+
+        <h2 class="text-left text-xl mt-10 font-bold">
+          Olá, Juliana Coelho!
+        </h2>
+      </div>
+
+      <!-- <div class="w-full bg-gray-500 w-11/12 grid grid-flow-row auto-rows-max flex justify-end items-center text-center space-x-6"> -->
+      <div class="w-7/12 mr-2 lg:mt-4">
+        <div id="container-top-right" class="w-full h-20 flex flex-wrap justify-end">
+
+          <img src="./images/icon-home-large.png" id="icon-home" class="" alt="">
+          <img src="./images/icon-ring-notification.png" id="icon-ring" class="" alt="">
+
+          <!-- MENU AVATAR -->
+          <div class="static">
+            <img src="./images/avatar-teste.jpg" alt="" id="icon-avatar-top">
+            <div class="avatar-vert bg-white shadow-md h-80 absolute z-10 hidden">
+
+              <div class="avatar-img">
+                <img src="./images/avatar-teste.jpg" alt="" id="icon-avatar-top-menu">
+              </div>
+
+              <div>
+                <h5 class="text-blue-ID text-2xl font-bold">
+                  Juliana Coelho
+                </h5>
+                <h6 class="text-blue-dark font-semibold">
+                  CPF 123.456.789-00
+                </h6>
+              </div>
+
+              <div class="menu-vert-list">
+                <ul>
+                  <li class="w-full">
+                    <a href="#" class="w-full">
+                      <img src="./images/icon-meus-dados.png" alt="">
+                      <span class="text-blue-dark">Meus dados</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./images/icon-ajuda.png" alt="">
+                      <span class="text-blue-dark">Ajuda</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./images/icon-privacidade.png" alt="">
+                      <span class="text-blue-dark">Privacidade</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./images/icon-sair.png" alt="">
+                      <span class="text-blue-dark">Sair</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- MENU ICON RIGHT TOP -->
+          <div class="static">
+            <img src="./images/icon-mark.png" alt="" id="icon-mark">
+
+            <div class="menu-vert bg-white shadow-md rounded-full absolute z-10 -top-1 hidden">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-01.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-02.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-03.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-04.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-05.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-menu-vert-06.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div id="container-bottom-right"
+        class="w-full h-20 flex flex-wrap
+        sm:space-x-2
+        lg:ml-10
+        justify-end -mt-2">
+
+          <div class="w-11/12 sm:h-20 text-left
+                      sm:w-full
+                      md:w-10/12
+                      lg:w-5/12
+                      ">
+
+            <div class="select-wrapper">
+              <select id="select" class="
+                w-full h-10 text-xs sm:text-lg font-semibold text-blue-ID rounded pl-4
+                lg:text-sx
+                mb-2
+              ">
+                <option>Selecione a matrícula</option>
+                <option>No</option>
+                <option>Maybe</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="w-8/12 mt-2
+            sm:-mt-6
+            lg:w-6/12 lg:mt-0 lg:float-left lg:space-x-2
+            ">
+            <div class="btn-trocar w-11/12 btn-top h-10 bg-blue-500 rounded leading-7
+                        sm:w-full
+                        md:w-5/12
+                        lg:w-5/12  lg:float-left
+                        float-right sm:float-none
+                        mb-2
+                        ">
+              <button class="">
+                <img src="./images/btn-trocar.png" class="mt-1" alt="">
+              </button>
+            </div>
+            <div class="btn-token  w-11/12 sm:w-6/12 btn-top h-10 bg-green-500 rounded leading-7
+                        sm:w-full
+                        md:w-5/12
+                        lg:w-5/12  lg:float-left
+                        float-right sm:float-none
+                        ">
+              <button class="">
+                <img src="./images/btn-token.png" class="mt-1" alt="">
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- barrinha -->
+    <div class="w-11/12 -mt-8 mx-auto flex items-stretch justify-start items-center text-center">
+      <div class="barrinha w-5/12 sm:w-3/12 lg:w-2/12 h-16 p-4 sm:p-2 bg-white shadow-md rounded-xl">
+        <div class="line-075 -mt-1  sm:pt-2">
+          <span class="text-blue-ID w-full font-bold text-xxxs block md:text-base">Margem disponível</span>
+
+          <span class="text-base sm:text-xl text-blue-dark font-semibold block mt-2 lg:mt-0">$ 403,57</span>
+        </div>
+      </div>
+
+      <div class="barrinha clear-both w-16 h-16 p-4 ml-1 sm:ml-3 bg-white shadow-md rounded-xl">
+
+        <img src="./images/icon-eye.png" class="mt-2" alt="">
+      </div>
+    </div>
+
+  </header>
+  <main class="h-screen flex-grow">
+
+    <div class="w-11/12 mx-auto mt-12 mb-2">
+      <div class="text-blue-dark text-sm font-semibold">
+        Home / <span class="text-blue-ID">Minhas Simulações</span>
+      </div>
+      <h3 class="text-blue-ID text-2xl mt-4">Minhas Simulações</h3>
+    </div>
+    <!-- cards -->
+
+
+    <div class="mx-auto w-11/12 grid justify-between grid-cols-1 gap-10 md:grid-cols-4 mt-10
+    ">
+      <div class="w-full mx-auto px-8 py-2 h-100 rounded-xl bg-white">
+        <div class="text-center">
+          <h4 class="text-blue-ID text-2xl font-bold mb-8 mt-4">Simular Proposta</h4>
+          <p class="font-semibold text-xl text-gray-500 px-4">
+            Faça sua simulação de empréstimo
+            ou cartão de crédito consignado,
+            junto a instituição desejada,
+            definindo o prazo e o valor que
+            quiser. O prazo de reserva é de 48h,
+            permanecendo bloqueado até o
+            prazo da reserva ou até resposta da
+            instituição solicitada.
+          </p>
+          
+          <div class="mt-16">
+            <button class="w-3/4 mx-auto
+              lg:h-14 xl:text-xl
+              bg-blue-ID hover:bg-blue-700 text-white font-semibold py-2 px-4 hover:border-transparent rounded">
+              Quero Simular
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="w-full h-100 mt-10 md:mt-0 md:col-span-3 text-blue-dark mb-20 px-8 py-2
+      rounded-xl bg-white">
+      
+        <h4 class="text-center text-blue-ID text-xl font-bold mb-8 mt-4">
+          Histórico de Simulações
+        </h4>
+        <table class="table table-responsible zebra hovered ">
+          <thead class="thead gradient-top rounded text-white h-14 mb-0">
+            <tr class="text-base lg:text-2xl flex justify-between items-center text-left text-white py-4 font-normal">
+              <th scope="col" class="sm:w-1/12 sm:pl-1"></th>
+              <th scope="col" class="sm:w-2/12 sm:pl-1 text-lg font-medium">Credenciado</th>
+              <th scope="col" class="sm:w-2/12 sm:pl-0 text-lg font-medium">Correspondente</th>
+              <th scope="col" class="sm:w-2/12 sm:pl-0 text-lg font-medium">Solicitação</th>
+              <th scope="col" class="sm:w-1/12 sm:pl-0 text-lg font-medium">Tipo</th>
+              <th scope="col" class="sm:w-2/12 sm:pl-1 text-lg font-medium">Status</th>
+              <th scope="col" class="sm:w-2/12 sm:pl-1 text-lg font-medium">Notificação</th>
+            </tr>
+          </thead>
+          <tbody class="text-xs lg:text-base">
+            <tr class=" 
+            table-tr flex justify-between items-center text-center text-gray-700 font-normal md:py-4">
+              <td data-label="Data" class="sm:w-1/12 sm:pl-0">
+                <div class="container">
+                  <div class="round ml-4">
+                    <input type="checkbox" id="checkbox0" checked />
+                    <label for="checkbox0"></label>
+                  </div>
+                </div>
+              </td>
+
+              <td data-label="Credenciado" class="sm:w-2/12 sm:pl-1">
+                BANCO A
+              </td>
+
+              <td data-label="Correspondente" class="sm:w-2/12">
+                Agencia 01
+              </td>
+
+              <td data-label="Solicitação" class="sm:w-2/12 sm:pl-0">
+                Empréstimo
+              </td>
+
+
+              <td data-label="Tipo" class="sm:w-1/12">
+                Novo
+              </td>
+
+
+              <td data-label="Status" class="sm:w-2/12">
+                Solicitação
+              </td>
+
+              <td data-label="Notificação" class="sm:w-2/12">
+                "texto texto texto"
+              </td>
+            </tr>
+            <tr class=" 
+            table-tr flex justify-between items-center text-center text-gray-700 font-normal md:py-4">
+              <td data-label="Data" class="sm:w-1/12 sm:pl-0">
+                <div class="container">
+                  <div class="round ml-4">
+                    <input type="checkbox" id="checkbox0" />
+                    <label for="checkbox0"></label>
+                  </div>
+                </div>
+              </td>
+
+              <td data-label="Credenciado" class="sm:w-2/12 sm:pl-1">
+                BANCO A
+              </td>
+
+              <td data-label="Correspondente" class="sm:w-2/12">
+                Agencia 01
+              </td>
+
+              <td data-label="Solicitação" class="sm:w-2/12 sm:pl-0">
+                Cartão
+              </td>
+
+
+              <td data-label="Tipo" class="sm:w-1/12">
+                Novo
+              </td>
+
+
+              <td data-label="Status" class="sm:w-2/12">
+                Pré-aprovado
+              </td>
+
+              <td data-label="Notificação" class="sm:w-2/12">
+                "texto texto texto"
+              </td>
+            </tr>
+            <tr class=" 
+            table-tr flex justify-between items-center text-center text-gray-700 font-normal md:py-4">
+              <td data-label="Data" class="sm:w-1/12 sm:pl-0">
+                <div class="container">
+                  <div class="round ml-4">
+                    <input type="checkbox" id="checkbox0" />
+                    <label for="checkbox0"></label>
+                  </div>
+                </div>
+              </td>
+
+              <td data-label="Credenciado" class="sm:w-2/12 sm:pl-1">
+                BANCO A
+              </td>
+
+              <td data-label="Correspondente" class="sm:w-2/12">
+                Agencia 01
+              </td>
+
+              <td data-label="Solicitação" class="sm:w-2/12 sm:pl-0">
+                Empréstimo
+              </td>
+
+
+              <td data-label="Tipo" class="sm:w-1/12">
+                Novo
+              </td>
+
+
+              <td data-label="Status" class="sm:w-2/12">
+                Cancelado
+              </td>
+
+              <td data-label="Notificação" class="sm:w-2/12">
+                "texto texto texto"
+              </td>
+            </tr>
+            <tr class=" 
+            table-tr flex justify-between items-center text-center text-gray-700 font-normal md:py-4">
+              <td data-label="Data" class="sm:w-1/12 sm:pl-0">
+                <div class="container">
+                  <div class="round ml-4">
+                    <input type="checkbox" id="checkbox0" />
+                    <label for="checkbox0"></label>
+                  </div>
+                </div>
+              </td>
+
+              <td data-label="Credenciado" class="sm:w-2/12 sm:pl-1">
+                BANCO A
+              </td>
+
+              <td data-label="Correspondente" class="sm:w-2/12">
+                Agencia 01
+              </td>
+
+              <td data-label="Solicitação" class="sm:w-2/12 sm:pl-0">
+                Empréstimo
+              </td>
+
+
+              <td data-label="Tipo" class="sm:w-1/12">
+                Novo
+              </td>
+
+
+              <td data-label="Status" class="sm:w-2/12">
+                Contraproposta
+              </td>
+
+              <td data-label="Notificação" class="sm:w-2/12">
+                "texto texto texto"
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="mt-2">
+            
+          <button class="w-4/12 float-right mx-auto mt-4 mb-12
+            lg:h-14 xl:text-xl
+            bg-blue-ID hover:bg-blue-700 text-white font-semibold py-2 px-4 hover:border-transparent rounded">
+            Ver Detalhes
+          </button>
+        </div>
+      </div>
+      
+    </div>
+    <div class="w-10/12 mx-auto mt-20">
+      <div class="md:hidden">
+        <img src="./images/banner-use-digi-mobile.png"  class="flex-grow lg:w-7/12 mx-auto rounded-xl mt-12 mb-16" alt="">
+      </div>
+      
+      <div class="hidden md:block">
+        <img src="./images/banner-use-digi.jpg"  class="flex-grow lg:w-10/12 mx-auto rounded-xl mt-12 mb-16" alt="">
+      </div>
+    </div>
+
+    <br><br>
+
+  </main>
+
+  <footer class="bg-footer pr-4">
+    <div class="w-11/12 mx-auto text-right text-xxs pt-2 pb-2">
+
+      <div class="leading-3 flex justify-end space-x-2">
+
+        <span class="mt-1 font-bold text-blue-dark">
+          Queremos ouvir você
+        </span>
+
+        <a href="#">
+          <img src="./images/icon-social-insta.gif" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/icon-social-linkedin.gif" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/icon-social-fb.gif" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/icon-social-yt.gif" alt="">
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('icon-avatar-top')
+            .addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              document.querySelector('.avatar-vert').classList.toggle('hidden');
+            });
+
+
+    document.getElementById('icon-mark')
+            .addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              document.querySelector('.menu-vert').classList.toggle('hidden');
+            });
+    document.querySelector('div:not(.menu-vert)')
+            .addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              document.querySelector('.menu-vert').classList.add('hidden');
+            });
+  </script>
+
+</body>
+</html>
